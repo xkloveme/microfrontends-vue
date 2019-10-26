@@ -22,5 +22,7 @@
     "parcel-bundler": "^1.12.3",
     "vue-template-compiler": "^2.6.10"
   },
-  "browserslist": ["last 2 Chrome versions"]
+  "browserslist": [
+    "last 2 Chrome versions"
+  ]
 }
