@@ -1,47 +1,45 @@
 <template>
   <div class="app">
     Hello Vue
+    <br />
     <el-button @click="dialogVisible = true" type="text">open Dialog</el-button>
 
-    <el-dialog
-      :visible.sync="dialogVisible"
-      title="提示"
-      width="30%">
-      <span>{{framework}}</span>
+    <el-dialog :visible.sync="dialogVisible" title="提示" width="30%">
+      <span>{{ framework }}</span>
       <span class="dialog-footer" slot="footer">
-    <el-button @click="dialogVisible = false" type="primary">ok</el-button>
-  </span>
+        <el-button @click="dialogVisible = false" type="primary">ok</el-button>
+      </span>
     </el-dialog>
   </div>
 </template>
 
 <script>
-  import ElementUI from 'element-ui';
-  import Vue from 'vue';
+import ElementUI from 'element-ui';
+import Vue from 'vue';
 
-  export default {
-    name: 'App',
-    data() {
-      return {
-        dialogVisible: false,
-        framework: `hello Vue ${Vue.version} element-ui ${ElementUI.version}`,
-      };
+export default {
+  name: 'App',
+  data () {
+    return {
+      dialogVisible: false,
+      framework: `hello Vue ${Vue.version} element-ui ${ElementUI.version}`,
+    };
+  },
+  methods: {
+    handleClose (done) {
+      this.$confirm('confirm to close？')
+        .then(_ => {
+          done();
+        })
+        .catch(_ => {
+        });
     },
-    methods: {
-      handleClose(done) {
-        this.$confirm('confirm to close？')
-          .then(_ => {
-            done();
-          })
-          .catch(_ => {
-          });
-      },
-    },
-  };
+  },
+};
 </script>
 
 <style scoped>
-  .app {
-    color: bisque;
-  }
+.app {
+  color: bisque;
+}
 </style>

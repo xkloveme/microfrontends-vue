@@ -68841,8 +68841,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
-//
-//
 var _default = {
   name: 'App',
 
@@ -68863,14 +68861,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $e35fdc = exports.default || module.exports;
+        var $d7e5a8 = exports.default || module.exports;
       
-      if (typeof $e35fdc === 'function') {
-        $e35fdc = $e35fdc.options;
+      if (typeof $d7e5a8 === 'function') {
+        $d7e5a8 = $d7e5a8.options;
       }
     
         /* template */
-        Object.assign($e35fdc, (function () {
+        Object.assign($d7e5a8, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -68880,6 +68878,8 @@ exports.default = _default;
     { staticClass: "app" },
     [
       _vm._v("\n  Hello Vue\n  "),
+      _c("br"),
+      _vm._v(" "),
       _c(
         "el-button",
         {
@@ -68942,7 +68942,7 @@ render._withStripped = true
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-e35fdc",
+            _scopeId: "data-v-d7e5a8",
             functional: undefined
           };
         })());
@@ -68955,9 +68955,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$e35fdc', $e35fdc);
+            api.createRecord('$d7e5a8', $d7e5a8);
           } else {
-            api.reload('$e35fdc', $e35fdc);
+            api.reload('$d7e5a8', $d7e5a8);
           }
         }
 
@@ -69000,12 +69000,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * @Author: superDragon
  * @Date: 2019-10-24 15:18:34
  * @LastEditors: superDragon
- * @LastEditTime: 2019-10-24 18:38:13
- */
-
-/**
- * @author Kuitos
- * @since 2019-05-16
+ * @LastEditTime: 2019-10-27 20:25:52
  */
 _vue.default.use(_elementUi.default);
 
@@ -69060,7 +69055,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57813" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52590" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

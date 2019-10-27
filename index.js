@@ -3,11 +3,7 @@
  * @Author: superDragon
  * @Date: 2019-10-24 15:18:34
  * @LastEditors: superDragon
- * @LastEditTime: 2019-10-24 18:38:13
- */
-/**
- * @author Kuitos
- * @since 2019-05-16
+ * @LastEditTime: 2019-10-27 20:25:52
  */
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
